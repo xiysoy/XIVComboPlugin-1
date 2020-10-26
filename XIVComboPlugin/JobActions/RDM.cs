@@ -3,6 +3,8 @@
     public static class RDM
     {
         public const uint
+            Veraero = 7507,
+            Verthunder = 7505,
             Veraero2 = 16525,
             Verthunder2 = 16524,
             Impact = 16526,
