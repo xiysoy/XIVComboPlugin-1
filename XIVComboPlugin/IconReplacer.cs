@@ -987,7 +987,7 @@ namespace XIVComboPlugin
             {
                 if (actionID == RDM.Verstone)
                 {
-                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Scorch;
+                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Veraero;
                     UpdateBuffAddress();
                     if (SearchBuffArray(1235)) return RDM.Verstone;
                     if (level < 62) return RDM.Veraero;
@@ -995,7 +995,7 @@ namespace XIVComboPlugin
                 }
                 if (actionID == RDM.Verfire)
                 {
-                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Scorch;
+                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Verthunder;
                     UpdateBuffAddress();
                     if (SearchBuffArray(1234)) return RDM.Verfire;
                     if (level < 62) return RDM.Verthunder;
