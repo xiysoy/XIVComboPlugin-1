@@ -983,23 +983,22 @@ namespace XIVComboPlugin
                         return RDM.ERiposte;
                     return RDM.Riposte;
                 }
+            // .
             if (Configuration.ComboPresets.HasFlag(CustomComboPreset.RedMageVerprocCombo))
-            {
-                if (actionID == RDM.Verstone)
+                if (actionID == RDM.Veraero)
                 {
-                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Veraero;
                     UpdateBuffAddress();
-                    if (SearchBuffArray(1235)) return RDM.Verstone;
-                    if (level < 62) return RDM.Veraero;
-                    return RDM.Veraero;
+                    if (SearchBuffArray(1235))
+                    {
+                        return BRD.Verstone;
+                    }
                 }
-                if (actionID == RDM.Verfire)
+                if (actionID == RDM.Verthunder)
                 {
-                    if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Verthunder;
                     UpdateBuffAddress();
-                    if (SearchBuffArray(1234)) return RDM.Verfire;
-                    if (level < 62) return RDM.Verthunder;
-                    return RDM.Verthunder;
+                    if (SearchBuffArray(1234))
+                    {
+                        return BRD.Verfire;
                 }
             }
 
